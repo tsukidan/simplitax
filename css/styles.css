@@ -1,0 +1,63 @@
+:root 
+{
+    --font: 'Courier New', Courier, monospace;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    min-width: 600px;
+    background: url("/img/paper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+  }
+.input-container input {
+    margin-bottom: 10px;
+    background: transparent;
+    color: #000;
+    border: none;
+    box-shadow: none;
+    font-family: var(--font);
+}
+
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/img/wood.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.receipt {
+    width: 600px;
+    background: url("/img/paper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+.receipt
+p{
+    font-size: 18px;
+}
+.receipt-header h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+footer {
+    margin-top: auto;
+}
