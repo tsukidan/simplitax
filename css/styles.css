@@ -45,7 +45,6 @@ body {
     min-height: 100vh;
     background: url("../img/wood.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
 }
 .generated-receipt
@@ -141,3 +140,22 @@ footer a, footer p
 {
     color: #fff;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .input-container {
+      min-width: auto;
+      width: 90%;
+      margin: 10px;
+    }
+  
+    .generated-receipt,
+    .receipt {
+      width: 90%;
+    }
+  
+    .add-item-btn {
+      width: 100%;
+    }
+  }
+  
