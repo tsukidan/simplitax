@@ -71,6 +71,8 @@ body {
 .receipt-header
 {
     margin-top: 10px;
+    font-weight: 900;
+    font-size: 20px;
 }
 .receipt {
     width: 600px;
@@ -106,6 +108,8 @@ body {
   color: #fff;
   padding: 14px;
   transition: all ease 800ms;
+  margin: 0 auto; /* Center the button horizontally */
+  display: block; /* Ensure the button takes up full width */
 }
 .add-item-btn:hover{
     background: #3b3b3b;
