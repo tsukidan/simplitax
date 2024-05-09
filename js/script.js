@@ -5,6 +5,17 @@ function addItem() {
     var itemCost = parseFloat(document.getElementById('itemCost').value);
     var salesTax = parseFloat(document.getElementById('salesTax').value) / 100;
 
+    // Validate input
+    if (!isFloat(itemCost)) {
+        alert('Please enter a valid item cost.');
+        return; // Stop further execution
+    }
+
+    if (!isFloat(salesTax)) {
+        alert('Please enter a valid sales tax.');
+        return; // Stop further execution
+    }
+
     // Calculate the sales tax
     var tempTax = itemCost * salesTax;
     // Calculate the final cost
@@ -22,6 +33,12 @@ function addItem() {
     document.getElementById('addedItems').appendChild(newItem);
 }
 
+// Function to check if a value is a float
+function isFloat(value) {
+    return /^-?\d*(\.\d+)?$/.test(value);
+}
+
+// Function to set the current date
 window.onload = function() {
     var currentDate = new Date();
     var formattedDate = currentDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
