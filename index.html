@@ -19,12 +19,32 @@
 </header>
 
 <div class="receipt">
-    <div class="receipt-header">
+    <div class="receipt-h1">
         <h1>Simplitax</h1>
     </div>
     <p>Welcome to Simplitax!</p>
+    <p class="receipt-description">To use Simplitax, simply enter the item name, its cost, and the applicable sales tax percentage in the input fields above. Then, click the "Add Item" button to add the item to your receipt. Repeat this process for each item you want to include. Once you're done, your final receipt will be generated below.</p>
 </div>
 
+<div class="generated-receipt">
+    <div class="receipt-header">
+        <br>
+        <p>
+            ***************************************************************
+                                        Receipt
+            ***************************************************************
+        </p>
+        <p class="terminal">
+            TERMINAL #1                                            
+            <span id="currentDate" class="date"></span>
+            ---------------------------------------------------------------
+        </p>
+        <div id="addedItems"></div>
+    </div>
+    <p>
+
+    </p>
+</div>
 <footer>
     <p>Artwork by <a href="https://www.freepik.com/author/rawpixel-com" target="_blank">Rawpixel.com</a></p>
 </footer>

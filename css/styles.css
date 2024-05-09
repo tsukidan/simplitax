@@ -29,6 +29,11 @@
     border: none;
     outline: none;
 }
+.date
+{
+    float: right;
+}
+
 body {
     font-family: var(--font);
     margin: 0;
@@ -43,7 +48,30 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-
+.generated-receipt
+{
+    width: 600px;
+    background: url("../img/paper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 10px;
+}
+.generated-receipt p{
+    font-size: 16px;
+}
+.terminal
+{
+    text-align: left;
+}
+.receipt-header
+{
+    margin-top: 10px;
+}
 .receipt {
     width: 600px;
     background: url("../img/paper.jpg");
@@ -55,13 +83,16 @@ body {
     line-height: 1.5;
     text-align: center;
 }
-.receipt
-p{
-    font-size: 18px;
+.receipt p
+{
+    font-size: 16px;
 }
-.receipt-header h1 {
+.receipt-h1 h1 {
     font-size: 50px;
     font-weight: 900;
+}
+.receipt-description {
+    text-align: center;
 }
 
 .add-item-btn{
@@ -80,6 +111,29 @@ p{
     background: #3b3b3b;
     box-shadow: 0 3px 6px rgba(27, 27, 27, 0.685);
 }
-footer {
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.item-name {
+    flex: 1;
+}
+
+.final-cost {
+    text-align: right;
+}
+footer
+{
     margin-top: auto;
+}
+
+footer a, footer p
+{
+    color: #fff;
 }
